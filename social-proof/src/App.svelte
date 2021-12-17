@@ -1,6 +1,25 @@
 <script lang="ts">
+    import Main from "./components/Main.svelte";
     $: innerWidth = 0;
     $: isMobile = innerWidth <= 1440;
+    interface Rating {
+        stars: number;
+        reviewer: string;
+    }
+    const ratings: Rating[] = [
+        {
+            stars: 5,
+            reviewer: "Reviews",
+        },
+        {
+            stars: 5,
+            reviewer: "Report Guru",
+        },
+        {
+            stars: 5,
+            reviewer: "BestTech",
+        },
+    ];
 </script>
 
 <svelte:window bind:innerWidth />
@@ -27,6 +46,9 @@
             alt="Background Bottom Pattern"
         />
     </div>
+    <div id="wrapper">
+        <Main {ratings} />
+    </div>
 </div>
 
 <style>
@@ -46,6 +68,13 @@
         width: 100%;
         bottom: -25vh;
         right: 0;
+    }
+    #wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     @media all and (max-width: 1440px) {
         #background-top > img {
