@@ -113,8 +113,10 @@
     }
     @media all and (max-width: 1440px) {
         #app {
+            padding: 100px 0;
+            margin: auto;
+            height: 100%;
             width: 100%;
-            height: auto;
         }
         #wrapper {
             display: block;

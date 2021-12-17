@@ -15,11 +15,11 @@
         display: flex;
         flex-direction: column;
         width: 80%;
+        margin: auto;
     }
     @media all and (max-width: 1440px) {
         #main {
             width: 90%;
-            margin: 100px auto;
         }
     }
 </style>
