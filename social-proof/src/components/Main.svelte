@@ -2,11 +2,12 @@
     import Header from "./Header.svelte";
     import Footer from "./Footer.svelte";
     export let ratings;
+    export let testimonials;
 </script>
 
 <div id="main">
     <Header {ratings} />
-    <Footer />
+    <Footer {testimonials} />
 </div>
 
 <style>

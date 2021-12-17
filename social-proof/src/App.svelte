@@ -6,6 +6,12 @@
         stars: number;
         reviewer: string;
     }
+    interface Testimonial {
+        profile: string;
+        name: string;
+        occupation: string;
+        content: string;
+    }
     const ratings: Rating[] = [
         {
             stars: 5,
@@ -18,6 +24,29 @@
         {
             stars: 5,
             reviewer: "BestTech",
+        },
+    ];
+    const testimonials: Testimonial[] = [
+        {
+            profile: "image-colton.jpg",
+            name: "Colton Smith",
+            occupation: "Verified Buyer",
+            content:
+                "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!",
+        },
+        {
+            profile: "image-irene.jpg",
+            name: "Irene Roberts",
+            occupation: "Verified Buyer",
+            content:
+                "Customer Service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.",
+        },
+        {
+            profile: "image-anne.jpg",
+            name: "Anne Wallace",
+            occupation: "Verified Buyer",
+            content:
+                "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!",
         },
     ];
 </script>
@@ -47,7 +76,7 @@
         />
     </div>
     <div id="wrapper">
-        <Main {ratings} />
+        <Main {ratings} {testimonials} />
     </div>
 </div>
 

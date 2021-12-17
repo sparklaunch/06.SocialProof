@@ -19,6 +19,7 @@
         margin-bottom: 20px;
         font-size: 48px;
         line-height: 1;
+        letter-spacing: -1px;
     }
     #header-left > p {
         font-weight: 400;
