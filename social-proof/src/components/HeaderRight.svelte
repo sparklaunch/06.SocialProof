@@ -5,8 +5,8 @@
 
 <div id="header-right">
     <div id="ratings">
-        {#each ratings as rating}
-            <Rating data={rating} />
+        {#each ratings as rating, index}
+            <Rating data={rating} {index} />
         {/each}
     </div>
 </div>
@@ -19,5 +19,6 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-end;
     }
 </style>

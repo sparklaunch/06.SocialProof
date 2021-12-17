@@ -13,5 +13,6 @@
     #header {
         display: flex;
         align-items: center;
+        height: 300px;
     }
 </style>

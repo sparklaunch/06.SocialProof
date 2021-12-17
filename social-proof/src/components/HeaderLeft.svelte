@@ -10,12 +10,15 @@
     #header-left {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin-right: 120px;
-    }
-    #header-left {
+        justify-content: flex-start;
         color: rgb(72, 29, 71);
+        padding-right: 10%;
         width: 50%;
+    }
+    #header-left > h1 {
+        margin-bottom: 20px;
+        font-size: 48px;
+        line-height: 1;
     }
     #header-left > p {
         font-weight: 400;
