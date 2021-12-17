@@ -14,5 +14,6 @@
         display: flex;
         align-items: center;
         height: 300px;
+        margin-bottom: 100px;
     }
 </style>

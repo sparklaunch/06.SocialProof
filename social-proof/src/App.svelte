@@ -86,17 +86,21 @@
         height: 100vh;
         position: relative;
     }
-    #background-top > img {
+    #background-top {
         position: absolute;
-        width: 100%;
-        top: -25vh;
+        top: 0;
         left: 0;
     }
-    #background-bottom > img {
+    #background-bottom {
         position: absolute;
-        width: 100%;
-        bottom: -25vh;
+        bottom: 0;
         right: 0;
+    }
+    #background-top > img {
+        width: 100%;
+    }
+    #background-bottom > img {
+        width: 100%;
     }
     #wrapper {
         position: relative;
@@ -104,13 +108,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100vw;
+        height: 100vh;
     }
     @media all and (max-width: 1440px) {
-        #background-top > img {
-            top: 0;
-        }
-        #background-bottom > img {
-            bottom: 0;
-        }
     }
 </style>

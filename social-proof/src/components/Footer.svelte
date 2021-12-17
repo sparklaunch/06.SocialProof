@@ -10,3 +10,11 @@
         {/each}
     </div>
 </div>
+
+<style>
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+</style>
