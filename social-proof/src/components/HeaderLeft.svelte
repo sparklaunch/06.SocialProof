@@ -25,4 +25,18 @@
         font-weight: 400;
         line-height: 1.5;
     }
+    @media all and (max-width: 1440px) {
+        #header-left {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+        #header-left > h1 {
+            text-align: center;
+            font-size: 42px;
+        }
+        #header-left > p {
+            text-align: center;
+        }
+    }
 </style>

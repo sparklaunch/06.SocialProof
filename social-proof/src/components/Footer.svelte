@@ -17,4 +17,10 @@
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
     }
+    @media all and (max-width: 1440px) {
+        #cards {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 </style>

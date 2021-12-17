@@ -112,5 +112,14 @@
         height: 100vh;
     }
     @media all and (max-width: 1440px) {
+        #app {
+            width: 100%;
+            height: auto;
+        }
+        #wrapper {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
     }
 </style>

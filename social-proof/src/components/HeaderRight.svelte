@@ -21,4 +21,13 @@
         justify-content: space-between;
         align-items: flex-end;
     }
+    @media all and (max-width: 1440px) {
+        #header-right {
+            width: 100%;
+            margin-bottom: 120px;
+        }
+        #ratings {
+            align-items: center;
+        }
+    }
 </style>

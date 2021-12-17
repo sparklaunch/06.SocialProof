@@ -16,4 +16,10 @@
         flex-direction: column;
         width: 80%;
     }
+    @media all and (max-width: 1440px) {
+        #main {
+            width: 90%;
+            margin: 100px auto;
+        }
+    }
 </style>
