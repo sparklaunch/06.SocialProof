@@ -15,16 +15,16 @@
     const ratings: Rating[] = [
         {
             stars: 5,
-            reviewer: "Reviews",
+            reviewer: "Reviews"
         },
         {
             stars: 5,
-            reviewer: "Report Guru",
+            reviewer: "Report Guru"
         },
         {
             stars: 5,
-            reviewer: "BestTech",
-        },
+            reviewer: "BestTech"
+        }
     ];
     const testimonials: Testimonial[] = [
         {
@@ -32,22 +32,22 @@
             name: "Colton Smith",
             occupation: "Verified Buyer",
             content:
-                "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!",
+                "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
         },
         {
             profile: "image-irene.jpg",
             name: "Irene Roberts",
             occupation: "Verified Buyer",
             content:
-                "Customer Service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.",
+                "Customer Service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
         },
         {
             profile: "image-anne.jpg",
             name: "Anne Wallace",
             occupation: "Verified Buyer",
             content:
-                "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!",
-        },
+                "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
+        }
     ];
 </script>
 
@@ -60,7 +60,7 @@
         rel="stylesheet"
     />
 </svelte:head>
-<div id="app">
+<main>
     <div id="background-top">
         <img
             src="/assets/bg-pattern-top-{isMobile ? 'mobile' : 'desktop'}.svg"
@@ -78,10 +78,10 @@
     <div id="wrapper">
         <Main {ratings} {testimonials} />
     </div>
-</div>
+</main>
 
 <style>
-    #app {
+    main {
         width: 100vw;
         height: 100vh;
         position: relative;
@@ -112,10 +112,10 @@
         height: 100vh;
     }
     @media all and (max-width: 1440px) {
-        #app {
-            padding: 100px 0;
+        main {
+            padding: 100px 0 50px 0;
             margin: auto;
-            height: 100%;
+            height: auto;
             width: 100%;
         }
         #wrapper {

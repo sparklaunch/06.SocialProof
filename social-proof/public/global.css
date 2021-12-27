@@ -5,3 +5,7 @@
     font-family: "Spartan", sans-serif;
     transition: ease all 0.5s;
 }
+html,
+body {
+    height: 100%;
+}
